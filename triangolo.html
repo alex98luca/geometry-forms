@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <title> triangolo </title>
+</head>
+
+<body>
+    <div id="header">
+        <h1> geometry forms </h1>
+        <h2> Calcola area e perimetro delle figure che vuoi! </h2>
+    </div>
+
+    <div id="menu">
+        <a class="pages" href="index.html">Homepage</a>
+        <a class="pages" href="quadrato.html">Quadrato</a>
+        <a class="pages" href="rettangolo.html">Rettangolo</a>
+        <a class="pages currentPage" href="triangolo.html">Triangolo</a>
+        <a class="pages" href="rombo.html">Rombo</a>
+        <a class="pages" href="trapezio.html">Trapezio</a>
+        <a class="pages" href="cerchio.html">Cerchio</a>
+        <a class="pages" href="parallelogramma.html">Parallelogramma</a>
+    </div>
+
+    <div>
+        <button class="options" onclick="showArea()">Area</button>
+        <button class="options" onclick="showPerimeter()">Perimetro</button>
+    </div>
+
+    <div id="area" style="display:none;">
+        <h3>Calcola Area</h3>
+            <div class="input">
+                Inserisci la base:
+                <input id="baseA" type="text" placeholder="base"><br>
+                Inserisci l'altezza:
+                <input id="heightA" type="text" placeholder="altezza"><br>
+                <button class="confirm" onclick="calculateTriangleArea()">Conferma</button>
+            </div>
+        <p id="triangleArea"></p>
+    </div>
+    
+    <div id="perimeter" style="display: none;">
+        <h3>Calcola Perimetro</h3>
+        <div>
+            <button id="eqPerimeter" class="options type" onclick="showEqPer()">Equilatero</button>
+            <button id="isPerimeter" class="options type" onclick="showIsPer()">Isoscele</button>
+            <button id="scPerimeter" class="options type" onclick="showScPer()">Scaleno</button>
+        </div>
+
+        <div id="equilateralPerimeter" style="display: none;">
+            <div class="input">
+                Inserisci il lato:
+                <input id="sideEqP" type="text" placeholder="lato"><br>
+                <button class="confirm" onclick="calculateEquilateralTrianglePerimeter()">Conferma</button>
+            </div>
+        </div>
+        <div id="isoscelesPerimeter" style="display: none;">
+            <div class="input">
+                Inserisci il lato doppio:
+                <input id="doubleSideIsP" type="text" placeholder="lato doppio"><br>
+                Inserisci il lato singolo:
+                <input id="sideIsP" type="text" placeholder="lato singolo"><br>
+                <button class="confirm" onclick="calculateIsoscelesTrianglePerimeter()">Conferma</button>
+            </div>
+        </div>
+        <div id="scalenePerimeter" style="display: none;">
+            <div class="input">
+                Inserisci il primo lato:
+                <input id="side1ScP" type="text" placeholder="primo lato"><br>
+                Inserisci il secondo lato:
+                <input id="side2ScP" type="text" placeholder="secondo lato"><br>
+                Inserisci il terzo lato:
+                <input id="side3ScP" type="text" placeholder="terzo lato"><br>
+                <button class="confirm" onclick="calculateScaleneTrianglePerimeter()">Conferma</button>
+            </div>
+        </div>
+        <p id="trianglePerimeter"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

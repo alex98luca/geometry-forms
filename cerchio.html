@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <title> cerchio </title>
+</head>
+
+<body>
+    <div id="header">
+        <h1> geometry forms </h1>
+        <h2> Calcola area e perimetro delle figure che vuoi! </h2>
+    </div>
+
+    <div id="menu">
+        <a class="pages" href="index.html">Homepage</a>
+        <a class="pages" href="quadrato.html">Quadrato</a>
+        <a class="pages" href="rettangolo.html">Rettangolo</a>
+        <a class="pages" href="triangolo.html">Triangolo</a>
+        <a class="pages" href="rombo.html">Rombo</a>
+        <a class="pages" href="trapezio.html">Trapezio</a>
+        <a class="pages currentPage" href="cerchio.html">Cerchio</a>
+        <a class="pages" href="parallelogramma.html">Parallelogramma</a>
+    </div>
+
+    <div>
+        <button class="options" onclick="showArea()">Area</button>
+        <button class="options" onclick="showPerimeter()">Circonferenza</button>
+    </div>
+
+    <div id="area" style="display:none;">
+        <h3>Calcola Area</h3>
+        <div class="input">
+            Inserisci il raggio:
+            <input id="radiusA" type="text" placeholder="raggio"><br>
+            <button class="confirm" onclick="calculateCircleArea()">Conferma</button>
+        </div>
+        <p id="circleArea"></p>
+    </div>
+    
+    <div id="perimeter" style="display:none;">
+        <h3>Calcola Circonferenza</h3>
+        <div class="input">
+            Inserisci il raggio:
+            <input id="radiusP" type="text" placeholder="raggio"><br>
+            <button class="confirm" onclick="calculateCircumference()">Conferma</button>
+        </div>
+        <p id="circumference"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

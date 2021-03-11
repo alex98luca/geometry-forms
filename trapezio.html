@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <title> trapezio </title>
+</head>
+
+<body>
+    <div id="header">
+        <h1> geometry forms </h1>
+        <h2> Calcola area e perimetro delle figure che vuoi! </h2>
+    </div>
+
+    <div id="menu">
+        <a class="pages" href="index.html">Homepage</a>
+        <a class="pages" href="quadrato.html">Quadrato</a>
+        <a class="pages" href="rettangolo.html">Rettangolo</a>
+        <a class="pages" href="triangolo.html">Triangolo</a>
+        <a class="pages" href="rombo.html">Rombo</a>
+        <a class="pages currentPage" href="trapezio.html">Trapezio</a>
+        <a class="pages" href="cerchio.html">Cerchio</a>
+        <a class="pages" href="parallelogramma.html">Parallelogramma</a>
+    </div>
+    
+    <div>
+        <button class="options" onclick="showArea()">Area</button>
+        <button class="options" onclick="showPerimeter()">Perimetro</button>
+    </div>
+
+    <div id="area" style="display:none;">
+        <h3>Calcola Area</h3>
+            <div class="input">
+                Inserisci la base maggiore:
+                <input id="base1A" type="text" placeholder="base maggiore"><br>
+                Inserisci la base minore:
+                <input id="base2A" type="text" placeholder="base minore"><br>
+                Inserisci l'altezza:
+                <input id="heightA" type="text" placeholder="altezza"><br>
+                <button class="confirm" onclick="calculateTrapezoidArea()">Conferma</button>
+            </div>
+            <p id="trapezoidArea"></p>
+        </div>
+        
+        <div id="perimeter" style="display: none;">
+            <h3>Calcola Perimetro</h3>
+            <div>
+                <button id="eqPerimeter" class="options type" onclick="showEqPer()">Rettangolo</button>
+                <button id="isPerimeter" class="options type" onclick="showIsPer()">Isoscele</button>
+                <button id="scPerimeter" class="options type" onclick="showScPer()">Scaleno</button>
+            </div>
+            
+            <div id="equilateralPerimeter" style="display: none;">
+                <div class="input">
+                    Inserisci la base maggiore:
+                    <input id="base1ReP" type="text" placeholder="base maggiore"><br>
+                    Inserisci la base minore:
+                    <input id="base2ReP" type="text" placeholder="base minore"><br>
+                    Inserisci l'altezza:
+                    <input id="heightReP" type="text" placeholder="altezza"><br>
+                    Inserisci il lato obliquo:
+                    <input id="sideReP" type="text" placeholder="lato obliquo"><br>
+                    <button class="confirm" onclick="calculateRectTrapezoidPerimeter()">Conferma</button>
+                </div>
+            </div>
+            <div id="isoscelesPerimeter" style="display: none;">
+                <div class="input">
+                    Inserisci la base maggiore:
+                    <input id="base1IsP" type="text" placeholder="base maggiore"><br>
+                    Inserisci la base minore:
+                    <input id="base2IsP" type="text" placeholder="base minore"><br>
+                    Inserisci il lato obliquo:
+                    <input id="doubleSideIsP" type="text" placeholder="lato obliquo"><br>
+                    <button class="confirm" onclick="calculateIsoscelesTrapezoidPerimeter()">Conferma</button>
+                </div>
+            </div>
+            <div id="scalenePerimeter" style="display: none;">
+                <div class="input">
+                    Inserisci la base maggiore:
+                    <input id="base1ScP" type="text" placeholder="base maggiore"><br>
+                    Inserisci la base minore:
+                    <input id="base2ScP" type="text" placeholder="base minore"><br>
+                    Inserisci il primo lato obliquo:
+                    <input id="side1ScP" type="text" placeholder="lato obliquo"><br>
+                    Inserisci il secondo lato obliquo:
+                    <input id="side2ScP" type="text" placeholder="lato obliquo"><br>
+                    <button class="confirm" onclick="calculateScaleneTrapezoidPerimeter()">Conferma</button>        
+                </div>
+            </div>
+        <p id="trapezoidPerimeter"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

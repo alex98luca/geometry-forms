@@ -1,0 +1,96 @@
+body{
+    background: linear-gradient(-30deg,yellow,orange,yellow);
+    background-color: orange;
+    color: purple;
+    text-align: center;
+}
+
+div{
+    background: linear-gradient(30deg,yellow,orange,yellow);
+    margin: 20px 0 0 0;
+    padding: 5px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+p{
+    font-size: 30px;
+}
+
+input{
+    height: 30px;
+    width: 100px;
+    margin: 5px;
+    border: solid 2px purple;
+    border-radius:5px;
+    text-align: center;
+    color: purple;
+    font-size: 20px;
+}
+
+.pages{
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(30deg,purple,indigo,purple);
+    border-radius: 0 30px 0 30px;
+    padding: 20px;
+    margin: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+.currentPage{
+    background: linear-gradient(30deg,indigo,blue,indigo);
+}
+
+.options{
+    display: inline-block;
+    background: linear-gradient(-30deg,orangered,yellow,orangered);
+    border-radius: 50px 0 50px 0;
+    border: solid 2px purple;
+    padding: 20px;
+    margin: 5px;
+    font-size: 20px;
+    color: purple;
+}
+
+.type{
+    background: linear-gradient(-30deg,orangered,orange,orangered);
+}
+
+.active{
+    display: inline-block;
+    background: linear-gradient(-30deg,yellow,green,yellow);
+    border-radius: 50px 0 50px 0;
+    border: solid 2px purple;
+    padding: 20px;
+    margin: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+.input{
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.confirm{
+    background: linear-gradient(-30deg,yellow,green,yellow);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    border: solid 2px purple;
+    color: white;
+    font-size: 20px;
+}
+
+#header{
+    background: linear-gradient(-30deg,red,orange,yellow,green,blue,indigo,violet);
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    margin: 0;
+}

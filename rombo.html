@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <title> rombo </title>
+</head>
+
+<body>
+    <div id="header">
+        <h1> geometry forms </h1>
+        <h2> Calcola area e perimetro delle figure che vuoi! </h2>
+    </div>
+
+    <div id="menu">
+        <a class="pages" href="index.html">Homepage</a>
+        <a class="pages" href="quadrato.html">Quadrato</a>
+        <a class="pages" href="rettangolo.html">Rettangolo</a>
+        <a class="pages" href="triangolo.html">Triangolo</a>
+        <a class="pages currentPage" href="rombo.html">Rombo</a>
+        <a class="pages" href="trapezio.html">Trapezio</a>
+        <a class="pages" href="cerchio.html">Cerchio</a>
+        <a class="pages" href="parallelogramma.html">Parallelogramma</a>
+    </div>
+    
+    <div>
+        <button class="options" onclick="showArea()">Area</button>
+        <button class="options" onclick="showPerimeter()">Perimetro</button>
+    </div>
+
+    <div id="area" style="display:none;">
+        <h3>Calcola Area</h3>
+        <div class="input">
+            Inserisci la diagonale maggiore:
+            <input id="diag1A" type="text" placeholder="diagonale maggiore"><br>
+            Inserisci la diagonale minore:
+            <input id="diag2A" type="text" placeholder="diagonale minore"><br>
+            <button class="confirm" onclick="calculateRhombusArea()">Calcola</button>
+        </div>
+        <p id="rhombusArea"></p>
+    </div>
+    
+    <div id="perimeter" style="display:none;">
+        <h3>Calcola Perimetro</h3>
+        <div class="input">
+            Inserisci il lato:
+            <input id="sideP" type="text" placeholder="lato"><br>
+            <button class="confirm" onclick="calculateSquarePerimeter()">Calcola</button>
+        </div>
+        <p id="squarePerimeter"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
